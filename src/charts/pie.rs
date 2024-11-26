@@ -125,6 +125,7 @@ pub struct PieChartProps {
 /// - `class_slice`: &[str] (default: `"dx-slice"`): The HTML element `class` for all pie
 /// slices.
 /// - `class_label`: &[str] (default: `"dx-label"`): The HTML element `class` for all labels.
+
 #[allow(non_snake_case)]
 #[component]
 pub fn PieChart(props: PieChartProps) -> Element {

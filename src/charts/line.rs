@@ -4,7 +4,6 @@ use crate::grid::{Axis, Grid};
 use crate::types::*;
 
 /// The `LineChart` properties struct for the configuration of the line chart.
-#[allow(clippy::struct_excessive_bools)]
 #[derive(Clone, PartialEq, Props)]
 pub struct LineChartProps {
     series: Series,
@@ -161,6 +160,7 @@ pub struct LineChartProps {
 /// labels.
 /// - `class_grid_labels`: &[str] (default: `"dx-grid-labels"`): The HTML element `class` of the
 /// group of grid labels.
+
 #[allow(non_snake_case)]
 #[component]
 pub fn LineChart(props: LineChartProps) -> Element {
